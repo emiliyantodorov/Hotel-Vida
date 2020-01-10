@@ -1,0 +1,45 @@
+@mixin createPseudoBeforeOrAfter($top: 0, $left: 0) {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  top: $top;
+  left: $left;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin for-breakpoint($breakpoint) {
+  @if ($breakpoint == sm) {
+    @media (min-width: 576px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == md) {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == lg) {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == xl) {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+@mixin box() {
+  color: $color-paragraph;
+  padding-top: map_get($section, p-xs);
+  padding-bottom: map_get($section, p-xs);
+  text-align: center;
+
+  @include for-breakpoint(md) {
+    padding: 0;
+    padding-top: map_get($section, p-sm);
+    padding-bottom: map_get($section, p-sm);
+  }
+}

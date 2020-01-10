@@ -1,0 +1,389 @@
+/*Section*/
+.centered {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.text-carrot {
+  color: #e67e22;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.show {
+  display: block;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+/*RESET*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5% !important;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.7rem;
+  margin-top: 6rem;
+  color: #444;
+}
+
+p {
+  line-height: 2.4rem;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+footer {
+  padding: 5rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/*BUTTONS*/
+.btn-default {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  text-transform: capitalize;
+  transition: all 0.2s;
+}
+.btn-default.btn--showcase:hover {
+  background-color: #fff;
+  color: #e67e22;
+  transform: scale(1.1);
+}
+.btn-default.btn--showcase:active {
+  transform: scale(1.06);
+}
+.btn-default.btn--read-more {
+  background: #fff;
+  color: #444;
+}
+.btn-default.btn--read-more:hover {
+  color: #e67e22;
+}
+.btn-default.btn--about-read-more:hover {
+  color: #e67e22;
+}
+.btn-default.btn--submit:hover {
+  color: #e67e22;
+}
+
+/*NAVBAR*/
+.navbar {
+  background-color: #444;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  opacity: 0.95;
+  box-shadow: 0 1px 1px #fff;
+}
+
+.mobile-toggle-btn {
+  display: inline-block;
+  color: #e67e22;
+  cursor: pointer;
+  margin: 1.3rem 2rem;
+}
+@media (min-width: 768px) {
+  .mobile-toggle-btn {
+    display: none;
+  }
+}
+
+.logo {
+  display: none;
+  text-transform: uppercase;
+  color: #fff;
+  margin-left: 2rem;
+}
+@media (min-width: 768px) {
+  .logo {
+    display: inline-block;
+  }
+}
+
+.nav {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.6s;
+}
+@media (min-width: 768px) {
+  .nav {
+    height: 100%;
+    margin-left: auto;
+  }
+}
+.nav__item {
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .nav__item {
+    display: inline-block;
+  }
+}
+.nav__link:link, .nav__link:visited {
+  display: block;
+  color: #fff;
+  padding: 2rem;
+  transition: all 0.2s;
+}
+.nav__link:link:hover, .nav__link:visited:hover {
+  background-color: #5e5e5e;
+  color: #e67e22;
+}
+.nav__link:link:active, .nav__link:visited:active {
+  background-color: #515151;
+}
+
+/*SHOWCASE*/
+.showcase {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  background-image: url("../images/showcase.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+
+.heading-primary {
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 3rem;
+  font-size: 4.5rem;
+  letter-spacing: 0.3rem;
+}
+
+.lead {
+  color: #fff;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/*SECTION INFO*/
+.section-info {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/photo-1.jpg");
+  background-size: cover;
+  padding: 5rem;
+}
+@media (min-width: 768px) {
+  .section-info {
+    padding: 0;
+  }
+}
+
+.info-left {
+  display: none;
+  height: 100%;
+  background: url("../images/photo-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .info-left {
+    display: inherit;
+  }
+}
+
+.info-right {
+  display: block;
+  text-align: center;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .info-right {
+    padding: 7.5rem 4rem;
+    background-color: #5e5e5e;
+  }
+}
+@media (min-width: 992px) {
+  .info-right {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+
+.heading-tertiary {
+  text-transform: capitalize;
+  font-size: 2.6rem;
+}
+
+/*FEATURES*/
+.feature {
+  color: #444;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+@media (min-width: 768px) {
+  .feature {
+    padding: 0;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .feature {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+.row div:nth-child(2) .feature {
+  background-color: #e67e22;
+}
+
+/*FOOTER*/
+.footer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: #444;
+}
+.footer__text {
+  color: #fff;
+}
+
+.facebook-icon {
+  align-self: center;
+  color: #fff;
+}
+
+/*ABOUT*/
+.section-about {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.section-about:last-child p {
+  color: green;
+}
+@media (min-width: 768px) {
+  .section-about {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
+}
+
+.hidden-text {
+  display: none;
+}
+
+/*TESTIMONIALS*/
+.section-testimonials {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: url("../images/test-bg.jpg") center/cover no-repeat;
+}
+@media (min-width: 768px) {
+  .section-testimonials {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
+}
+
+.testimonial {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(230, 126, 34, 0.9);
+  line-height: 2.4rem;
+  border-radius: 0.4rem;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .testimonial {
+    flex-flow: row;
+  }
+}
+.testimonial__user-img {
+  width: 5rem;
+}
+/*PAGE CONTACT*/
+/*ABOUT*/
+.section-form {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .section-form {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
+}
+
+.heading-secondary {
+  text-transform: capitalize;
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 1rem;
+}
+.form-group input {
+  display: block;
+  border: 1px solid;
+  padding: 0.7rem;
+  border-radius: 0.2rem;
+}
+.form-group textarea {
+  border: 1px solid;
+  padding: 0.7rem;
+  border-radius: 0.2rem;
+}
+
+.section-contact-info {
+  background: #e67e22;
+}
+
+.contact-info {
+  color: #444;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .contact-info {
+    padding: 0;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

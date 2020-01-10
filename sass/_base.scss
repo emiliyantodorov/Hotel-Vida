@@ -1,0 +1,39 @@
+/*RESET*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5% !important;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.7rem;
+  margin-top: 6rem;
+  color: $color-black;
+}
+
+
+p {
+  line-height: 2.4rem;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+footer {
+  padding: map_get($section, p-xs);
+}
+
+img {
+  width: 100%;
+  border-radius: 50%;
+}
+
